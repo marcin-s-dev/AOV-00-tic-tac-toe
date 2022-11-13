@@ -9,6 +9,9 @@ export default defineConfig({
       reactivityTransform: true,
     }),
   ],
+   test: {
+    environment: 'jsdom',
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
